@@ -6,7 +6,7 @@ Created on 11 may. 2020
 from math import log 
  
 import random
-vel_arribo=4.0
+vel_arribo=4.9
 vel_partida=3.0
 total_clientes=10000
 ilam=1/vel_arribo

@@ -9,17 +9,12 @@ from math import log
 
 #x = (-1/lambda)*log(1-random())
 lambda_=4.5
-datos=[int((-1/lambda_)*log(1-random())*100) for _ in range(3000)]
+datos=[int((-1/lambda_)*log(1-random())*100) for _ in range(2500)]
 plt.hist(datos, 20, edgecolor='black', linewidth=1)
 plt.ylabel("frecuencia")
 plt.xlabel("valores")
 plt.title("histograma")
 plt.show()
-
-
-
-
-
 
 if __name__ == '__main__':
     pass

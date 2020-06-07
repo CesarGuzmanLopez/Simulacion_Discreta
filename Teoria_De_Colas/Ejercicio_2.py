@@ -25,23 +25,15 @@ from math import e,factorial
 def Poisson(lambda_1, i):
     return  ((e**(-lambda_1)) * lambda_1**i)/factorial(i)
 
-
-
 print("Pregunta 2.- ", Poisson(2/3, 1))
 print("Pregunta 3.- ", Poisson(4, 5))
-#pregunta 4
+#pregunta 4 probabilidad acumulada
 prob_5=0
 for i in range(5):
     prob_5+=Poisson(4,i)
 print("Pregunta 4.- ", Poisson(4, i))
-
 #pregunta 5
 prob_mas_40=0
 for i in range(40):
     prob_mas_40+=Poisson(8*4,i)
-    
 print("Pregunta 5.- ",1.0-prob_mas_40)
-
-
-if __name__ == '__main__':
-    pass
